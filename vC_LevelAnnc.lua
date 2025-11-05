@@ -7,7 +7,6 @@ local vC_RegisterEvents = CreateFrame("Frame")
 	vC_RegisterEvents:SetScript("OnEvent", function(s, e, ...)
 	if ( e == "ADDON_LOADED" ) then
 		local vC_ListOfEvents = {
-			"PLAYER_LOGIN",
 			"PLAYER_ENTERING_WORLD",
 			"PLAYER_LEVEL_UP",											-- Did Player Level Up?
 			"UNIT_AURA",												-- Only for Legion Remix
@@ -16,10 +15,6 @@ local vC_RegisterEvents = CreateFrame("Frame")
 			vC_RegisterEvents:RegisterEvent(vC_ListOfEvents[i])
 		end
 	end
-	if ( e == "PLAYER_LOGIN" ) then
-		DEFAULT_CHAT_FRAME:AddMessage("Loaded: "..vC_AppTitle)			-- Display Title with Version in Chat
-	end
-
 	-- Player Aura Update	
 	if ( e == "PLAYER_ENTERING_WORLD" ) then
 		vC_AuraChange_LegionRemix()
