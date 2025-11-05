@@ -1,0 +1,10 @@
+## Author: Vandiel-Korgath
+## Interface: 110207, 120000
+## Version: 1.0
+## Title: Van's QoL Lvl Annc & Remix Display
+## IconTexture: Interface/Calendar/Holidays/Calendar_Fireworks
+## Notes: Quality of Life AddOns Without the Bloats
+
+## Category-enUS: .Van's Simple QoL
+
+vC_LevelAnnc.lua
